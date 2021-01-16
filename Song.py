@@ -11,7 +11,6 @@ class Song:
         self.songNum = self.uniqueIdentifier()
         self.votes = 1
 
-
     def getLength(self):
         return self.length
 

@@ -10,7 +10,6 @@ class DJ:
     def __addSong(self, song=None):
         if isinstance(song, Song):
             self.queue.append(song)
-            print('this is exe with')
         else:
             pass
 
@@ -29,15 +28,18 @@ class DJ:
             if thisSong.sid == song.sid:
                 song.votes += 1
                 self.sortQueue()
+                Song.songNum = Song.songNum - 1
                 del thisSong
                 return True
         self.__addSong(thisSong)
         return
 
     def sortQueue(self):
-        print('sorted')
-        pass
+        self.queue = sorted(self.queue, key=lambda x: x.votes, reverse=True)
 
     def printPlaylist(self):
         for song in self.queue:
             song.formatPrint()
+
+    def getPlaylist(self):
+        return self.queue

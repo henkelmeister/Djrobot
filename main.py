@@ -10,12 +10,14 @@ def main():
     dj = DJ()
     test = Song(name='first to play', artist='artist name', length=252, sid='1')
     test2 = Song(name='adsadasd', artist='bla bla bla', length=2522, sid='12323132')
-    test3 = Song(name='last', artist='camilo', length=2523, sid='2')
-    test4 = Song(name='last', artist='camilo', length=2523, sid='2')
+    test3 = Song(name='last', artist='camilo', length=2523, sid='3')
+    test4 = Song(name='lastsong', artist='camilo', length=25234, sid='5')
+    test5 = Song(name='lastsong', artist='camilo', length=25234, sid='5')
     dj.addSong(test)
     dj.addSong(test2)
     dj.addSong(test3)
     dj.addSong(test4)
+    dj.addSong(test5)
     dj.printPlaylist()
 
 # Press the green button in the gutter to run the script.
