@@ -34,6 +34,7 @@ class DJ:
         self.__addSong(thisSong)
         return
 
+    # sorts the playlist whenever a vote is incurred and it will move the highest votes to the top of the list
     def sortQueue(self):
         self.queue = sorted(self.queue, key=lambda x: x.votes, reverse=True)
 

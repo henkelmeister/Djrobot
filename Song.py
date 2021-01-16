@@ -35,6 +35,7 @@ class Song:
     def uniqueIdentifier():
         var = Song.songNum
         Song.songNum += 1
+
         return var
 
 
