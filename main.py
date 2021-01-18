@@ -19,6 +19,7 @@ def main():
     dj.addSong(test4)
     dj.addSong(test5)
     dj.printPlaylist()
+    Auth.authentication()
 
 # Press the green button in the gutter to run the script.
 
@@ -27,6 +28,7 @@ if __name__ == '__main__':
     from Song import Song
     import time
     from DJ import DJ
+    from Auth import Auth
     main()
 
 
